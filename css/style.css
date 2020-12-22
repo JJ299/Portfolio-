@@ -71,3 +71,7 @@ ul {
     --small-font-size: 0.813rem;
   }
 }
+
+.menu {
+  background: blue;
+}
