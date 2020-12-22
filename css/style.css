@@ -16,6 +16,7 @@
   --font-semi-bold: 600;
 
   /*Color*/
+  --dark-color: #101010;
 
   /*Margins*/
   --mb-1: 0.5rem;
@@ -28,4 +29,45 @@
   /*Z-index*/
   --z-tooltip: 10;
   --z-fixed: 100;
+}
+
+/*BASE*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 6rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
+  }
 }
